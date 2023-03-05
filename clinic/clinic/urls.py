@@ -7,7 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('dashboard/', include('dashboard.urls', namespace='dashboard')),
     path('', include('main.urls', namespace='main')),
-    path('auth/', include('siteauth.urls', namespace='siteauth')),
+    path('auth/', include('clinicauth.urls', namespace='clinicauth')),
     path('patient/', include('patients.urls', namespace='patients')),
     path('doctors/', include('doctors.urls', namespace='doctors')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
